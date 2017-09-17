@@ -3,10 +3,17 @@
 	border: 1px solid black;
 	height: 50%;
 	width: 50%;
-	overflow: hidden;
+	margin-right: 1%;
 }
 
-#sidebar {
+#sidebar { 
 	border: 1px solid black;
 	overflow: hidden;
+	width: 10%;
+	margin-bottom: 17%;
+}
+
+footer {
+	position: relative;
+	vertical-align:left-side; 
 }
