@@ -1,27 +1,21 @@
 #outer_container {
 	position: relative;
-	width: 50%;
-	height: 30%;
-	margin: 0 auto;
-	padding: 70px 0;
-	background-color: LightGray;
-}
-
-#inner_container {
-	position: relative;
 	text-align: center;
-	padding: 10% 0;
-	width: 80%;
-	height: 50%;
-	margin: 0 auto;
+	width: 20%;
+	height: 20%;
 	border: 1px solid black;
+	
 }
 
 input {
-	width: 83%;
+	width: 50%;
 	text-align: right;
+	margin: 10;
 }
 
 button {
-	width: 20%;
+	width: 10%;
+	border-radius: 30%;
+	margin: 1%;
+	background-color: LightGrey;
 }
