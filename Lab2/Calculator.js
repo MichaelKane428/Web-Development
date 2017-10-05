@@ -16,7 +16,7 @@ const Calculator = (calculator) =>{
 
     while (element) {
       if (element.nodeName === "BUTTON" && /flex-item/.test(element.className)) {
-        checkChars(element);
+        checkChars(element.innerHTML);
         break;
       }
 
@@ -24,42 +24,48 @@ const Calculator = (calculator) =>{
     }
   }
   
+  function on_keypress() {
+    event = event.which || event.keyCode;
+    let keyChar = String.fromCharCode(event);
+    checkChars(keyChar);
+  }
+  
   function checkChars(element){
-    let char = element.innerHTML;
     
-    if(char == 'C')
+    if(element == 'C')
     {
        expression = [];
        display.value = expression; 
     }
-    else if(char == '÷')
+    else if(element == '÷')
     {
       expression = expression + '/';
       display.value = expression;
     }
-    else if(char == 'x')
-    {
+    else if(element == 'x')
+    {12
       expression = expression + '*';
       display.value = expression;
     }
-    else if(char == '=')
+    else if(element == '=')
     {
-      display.value = total(display.value);
-      expression = []
+        display.value = total(display.value);
+        expression = []
     }
     else
     {
-      expression = expression + element.innerHTML;
-      display.value = expression;
+      if(['1', '2', '3','4','5','6','7','8','9','0','+','-','.','(',')','/','=','*'].includes(element)){
+        expression = expression + element;
+        display.value = expression;
+      }
+      
     }
   }
   
   function total(expression){
     return expression = eval(expression);
   }
-  function on_keypress() {
-    display.value = button[0].innerHTML;
-  }
+
 }
 
 Calculator(document.getElementById('calculator'));
