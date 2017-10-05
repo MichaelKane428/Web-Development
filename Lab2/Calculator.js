@@ -1,14 +1,31 @@
-function Calculator(calculator) {
-   var myvalue = 10;
-   document.querySelector("input").addEventListener("click", on_click);
-   document.querySelector("input").addEventListener("keypress", on_keypress);
+let mynumber;
+let button;
+let display;
+const Calculator = (calculator) =>{
+  
+  calculator.addEventListener("click", on_click);
+  calculator.addEventListener("keypress", on_keypress);
+  display = calculator.querySelector('input');
+  function on_click() {
+    event = event || window.event;
+    event.target = event.target || event.srcElement;
 
-   function on_click() {
-     document.querySelector("input").value = myvalue;
-   }
+    var element = event.target;
 
-   function on_keypress() {
-     document.querySelector("input").value = 9;
-   }
+    // Climb up the document tree from the target of the event
+    while (element) {
+      if (element.nodeName === "BUTTON" && /flex-item/.test(element.className)) {
+        display.value = element.innerHTML;
+        break;
+      }
+
+      element = element.parentNode;
+    }
+  }
+
+  function on_keypress() {
+    display.value = button[0].innerHTML;
+  }
 }
+
 Calculator(document.getElementById('calculator'));
