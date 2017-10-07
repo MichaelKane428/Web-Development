@@ -8,6 +8,7 @@ const Calculator = (calculator) =>{
   display = calculator.querySelector('input');
   
   //https://stackoverflow.com/questions/23835150/javascript-event-listener-for-multiple-buttons-with-same-class-name
+  // add an event listener for ALL BUTTONS
   function on_click() {
     event = event || window.event;
     event.target = event.target || event.srcElement;
@@ -24,12 +25,14 @@ const Calculator = (calculator) =>{
     }
   }
   
+  // add an event listener for keypresses
   function on_keypress() {
     event = event.which || event.keyCode;
     let keyChar = String.fromCharCode(event);
     checkChars(keyChar);
   }
   
+  // Check for specific charaters e.g. =.
   function checkChars(element){
     
     if(element == 'C')
@@ -52,6 +55,7 @@ const Calculator = (calculator) =>{
         display.value = total(display.value);
         expression = []
     }
+	// check keypress inputs for specific characters to prevent letters being entered.
     else
     {
       if(['1', '2', '3','4','5','6','7','8','9','0','+','-','.','(',')','/','=','*'].includes(element)){
