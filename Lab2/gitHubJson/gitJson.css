@@ -1,0 +1,34 @@
+#gitJson {
+  position: relative;
+  overflow: hidden;
+}
+
+
+#userInput {
+  float: left;
+  width: 70%;
+}
+
+#searchButton {
+  float: right;
+}
+
+#UserProfile {
+  display: block;
+  
+}
+
+.displayUserInfo,img {
+  display: block;
+  border: 1px solid grey;
+  width: 50%;
+  float: left;
+}
+
+.displayUserRepoInfo {
+  display: block;
+  border: 1px solid grey;
+  margin-left: 60%;
+  height: 100%;
+}
+
