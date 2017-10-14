@@ -9,25 +9,34 @@
   <div id="GitJson"></div>
     <div id="Search">
       <input id="userInput" type="text" placeholder="Username">
-      <button id="searchButton">Search</button>
+      <button class="searchButton">Search</button>
     </div>
     <div id="displayInformation">
       <div id="UserProfile">
-        <img src="https://avatars.githubusercontent.com/u/9919?v=3"></img>
-        <input class="displayUserInfo" type="text" readonly="readonly" placeholder="Name"></input>
-        <input class="displayUserInfo" type="text" readonly="readonly" placeholder="Username"></input>
-        <input class="displayUserInfo" type="text" readonly="readonly" placeholder="Email"></input>
-        <input class="displayUserInfo" type="text" readonly="readonly" placeholder="Location"></input>
-        <input class="displayUserInfo" type="text" readonly="readonly" placeholder="Number of Gists"></input>
+        <label class="displayUserInfo">User Profile</label>
+        <img class="displayUserInfo" src="https://avatars.githubusercontent.com/u/9919?v=3"></img>
+        <input id="Name" class="displayUserInfo" type="text" readonly="readonly" placeholder="Name"></input>
+        <input id="UserName" class="displayUserInfo" type="text" readonly="readonly" placeholder="Username"></input>
+        <input id="Email" class="displayUserInfo" type="text" readonly="readonly" placeholder="Email"></input>
+        <input id="Location" class="displayUserInfo" type="text" readonly="readonly" placeholder="Location"></input>
+        <input id="Gist" class="displayUserInfo" type="text" readonly="readonly" placeholder="Number of Gists"></input>
 
       </div>
       <div id="UserRepos">
+        <label class="displayUserRepoInfo">User Repos</label>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
         <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        <textarea class="displayUserRepoInfo" type="text" readonly="readonly" placeholder=""></textarea>
+        
       </div>
     </div>
   </div>
