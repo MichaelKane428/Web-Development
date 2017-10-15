@@ -25,7 +25,7 @@ body {
 #UserRepos {
   position: relative;
   margin-left: 60%;
-  overflow: scroll;
+  overflow: hidden;
 }
 .displayUserInfo {
   display: block;
