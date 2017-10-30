@@ -46,7 +46,7 @@ const Calculator = (calculator) =>{
       display.value = expression;
     }
     else if(element == 'x')
-    {12
+    {
       expression = expression + '*';
       display.value = expression;
     }
