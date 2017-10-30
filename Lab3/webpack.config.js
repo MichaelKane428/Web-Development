@@ -1,6 +1,6 @@
 const path = require('path');
 module.exports = {
-    entry: './Calculator/Calculator.js',
+    entry: './Calculator.js',
     output: {
         path: path.resolve(__dirname,'./'),
         filename: 'index.js'
@@ -12,6 +12,7 @@ module.exports = {
     module: {
         loaders: [
 	    {
+		exclude: '/node_modules/',
 		loader: 'babel-loader'
 	    }
 	]
