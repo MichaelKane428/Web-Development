@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="stopwatch.css">
   <meta charset="utf-8">
@@ -7,8 +7,19 @@
   <title>Stopwatch</title>
 </head>
 <body>
-  <div id="calculator">
-
+  <div class="row">
+    <div class="col left-col">
+      <canvas id="canvas" width="192" height="192"></canvas>
+      <h1 id="time">0:0:00</h1>
+      <div>
+	<button id="start">Start</button>
+	<button id="stop">Stop</button>
+	<button id="split">Split</button>
+	<button id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="col right-col" id="split_time">
+    </div>     
   </div>
   <script src="./index.js"></script>
 </body>

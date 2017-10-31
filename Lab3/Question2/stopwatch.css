@@ -1,0 +1,12 @@
+.row{
+ width: 100%;
+}
+
+.col {
+ display: inline-block;
+}
+
+.left-col {
+ float:left;
+ width: 200px;
+}

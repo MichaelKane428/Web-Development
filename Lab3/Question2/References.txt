@@ -1,2 +1,4 @@
 https://www.w3schools.com/jsref/met_document_queryselector.asp
 https://github.com/chen-yumin/rxjs-calculator-b/blob/master/src/app.js
+http://chenyumin.com/p/use-reactivex-rxjs-to-build-a-stream-driven-stopwatch
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
