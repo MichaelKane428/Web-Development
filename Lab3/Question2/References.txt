@@ -1,0 +1,2 @@
+https://www.w3schools.com/jsref/met_document_queryselector.asp
+https://github.com/chen-yumin/rxjs-calculator-b/blob/master/src/app.js
