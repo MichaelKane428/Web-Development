@@ -86,5 +86,4 @@ const create_stopwatch = (clock) => {
   }
 }
 
-create_clock();
 
